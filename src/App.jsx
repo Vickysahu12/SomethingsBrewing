@@ -10,7 +10,7 @@ import CoffeeScroller from "./pages/CofeeScroller";
 import CoffeeGallery from "./pages/CoffeeGallery";
 import TestimonialsScroller from "./pages/TestimonialScroller";
 import Blog from "./pages/Blog";
-import BookASeat from "./pages/BookaSeat";
+import BookASeat from "./pages/BookASeat";
 
 // Individual Pages
 import About from "./router/About";
@@ -48,7 +48,7 @@ const App = () => {
         <Route path="/menu" element={<Menu />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/book-table" element={<Booking />} />
+        <Route path="/booking" element={<Booking />} />
       </Routes>
     </Router>
   );
