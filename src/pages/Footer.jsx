@@ -49,11 +49,11 @@ const Footer = () => {
                   <div className="absolute top-1 left-1 w-2 h-2 bg-white rounded-full opacity-60"></div>
                 </div>
               </div>
-              <h3 className="text-2xl font-bold">SomethingsBrewing</h3>
+              <h3 className="text-2xl font-bold">𝐭𝐫𝐚𝐧𝐪𝐮𝐢𝐥𝟏𝟗𝟗𝟐</h3>
             </div>
             
             <p className="text-amber-100 text-sm leading-relaxed mb-6">
-              𝒮𝑜𝓂𝑒𝓉𝒽𝒾𝓃𝑔𝓈𝐵𝓇𝑒𝓌𝒾𝓃𝑔 𝑜𝒻𝒻𝑒𝓇𝓈 𝓅𝓇𝑒𝓂𝒾𝓊𝓂, 𝑒𝓍𝓅𝑒𝓇𝓉𝓁𝓎 𝒸𝓇𝒶𝒻𝓉𝑒𝒹 𝒸𝑜𝒻𝒻𝑒𝑒 𝓉𝒽𝒶𝓉 𝒹𝑒𝓁𝒾𝓋𝑒𝓇𝓈 𝓇𝒾𝒸𝒽 𝒻𝓁𝒶𝓋𝑜𝓇𝓈 𝒶𝓃𝒹 𝒶𝓃 𝓊𝓃𝒻𝑜𝓇𝑔𝑒𝓉𝓉𝒶𝒷𝓁𝑒 𝑒𝓍𝓅𝑒𝓇𝒾𝑒𝓃𝒸𝑒 𝒾𝓃 𝑒𝓋𝑒𝓇𝓎 𝒸𝓊𝓅.
+              𝐭𝐫𝐚𝐧𝐪𝐮𝐢𝐥𝟏𝟗𝟗𝟐 𝚘𝚏𝚏𝚎𝚛 𝚙𝚛𝚎𝚖𝚒𝚎𝚛 𝚎𝚡𝚙𝚎𝚛𝚝𝚎𝚍 𝚌𝚛𝚊𝚏𝚝𝚎𝚍 𝚌𝚘𝚏𝚎𝚎 𝚝𝚑𝚊𝚝 𝚍𝚎𝚕𝚒𝚎𝚟𝚎𝚛 𝚛𝚒𝚌𝚑 𝚏𝚕𝚊𝚟𝚘𝚞𝚛𝚜 𝚊𝚗𝚍 𝚊𝚗 𝚞𝚗𝚏𝚘𝚛𝚐𝚎𝚝𝚝𝚊𝚋𝚕𝚎 𝚎𝚡𝚙𝚎𝚛𝚒𝚎𝚗𝚌𝚎 𝚒𝚗 𝚎𝚟𝚎𝚛𝚢 𝚌𝚞𝚙
             </p>
             
             <div>
@@ -151,7 +151,7 @@ const Footer = () => {
         <div className="max-w-6xl mx-auto px-4 py-4">
           <div className="text-center">
             <p className="text-amber-200 text-sm">
-              © 2025 SomethingsBrewing. All Rights Reserved.
+              © 2025 𝐭𝐫𝐚𝐧𝐪𝐮𝐢𝐥𝟏𝟗𝟗𝟐. All Rights Reserved.
             </p>
           </div>
         </div>

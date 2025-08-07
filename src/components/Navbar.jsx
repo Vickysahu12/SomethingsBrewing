@@ -26,7 +26,7 @@ const Navbar = () => {
             className="h-9 w-9"
           />
           <span className="text-lg font-bold text-[#d4b06c]">
-            𝒮𝑜𝓂𝑒𝓉𝒽𝒾𝓃𝑔𝓈𝐵𝓇𝑒𝓌𝒾𝓃𝑔
+            𝐭𝐫𝐚𝐧𝐪𝐮𝐢𝐥𝟏𝟗𝟗𝟐
           </span>
         </NavLink>
 

@@ -19,10 +19,10 @@ const OurStory = () => {
               Our Story
             </h2>
             <h3 className="text-lg md:text-xl font-semibold text-[#e2b84c] mb-4">
-              𝐹𝓇𝑜𝓂 𝒫𝒶𝓈𝓈𝒾𝑜𝓃 𝓉𝑜 𝒫𝑒𝓇𝒻𝑒𝒸𝓉𝒾𝑜𝓃: 𝒯𝒽𝑒 𝒥𝑜𝓊𝓇𝓃𝑒𝓎 𝑜𝒻 𝒞𝒶𝒻é 𝒜𝓊𝓇𝒶
+              𝐹𝓇𝑜𝓂 𝒫𝒶𝓈𝓈𝒾𝑜𝓃 𝓉𝑜 𝒫𝑒𝓇𝒻𝑒𝒸𝓉𝒾𝑜𝓃: 𝒯𝒽𝑒 𝒥𝑜𝓊𝓇𝓃𝑒𝓎 𝑜𝒻 𝒞𝒶𝒻é 𝐭𝐫𝐚𝐧𝐪𝐮𝐢𝐥 𝟏𝟗𝟗𝟐
             </h3>
             <p className="text-gray-300 leading-relaxed max-w-xl">
-              At Café Aura, coffee isn’t just a drink — it’s a passion, a ritual,
+              At Café 𝐭𝐫𝐚𝐧𝐪𝐮𝐢𝐥𝟏𝟗𝟗𝟐, coffee isn’t just a drink — it’s a passion, a ritual,
               and an experience. Our journey began in 1954, when a group of coffee
               lovers came together with a simple mission: to create exceptional
               coffee that people could truly enjoy, share, and savor every day{" "}
