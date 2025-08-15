@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import gallery1 from "../assets/image/gallery1.jpg";
-import gallery2 from "../assets/image/gallery2.jpg";
-import gallery3 from "../assets/image/gallery3.jpg";
-import gallery4 from "../assets/image/gallery4.jpg";
-import gallery5 from "../assets/image/gallery5.jpg";
-import gallery6 from "../assets/image/gallery6.jpg";
+import gallery1 from "../assets/image/gallery1.webp";
+import gallery2 from "../assets/image/gallery2.webp";
+import gallery3 from "../assets/image/gallery3.webp";
+import gallery4 from "../assets/image/gallery4.webp";
+import gallery5 from "../assets/image/gallery5.webp";
+import gallery6 from "../assets/image/gallery6.webp";
 
 const CoffeeGallery = () => {
   const imagesRef = useRef([]);
@@ -114,7 +114,7 @@ const CoffeeGallery = () => {
                          hover:bg-[#e2b84c]/20 hover:scale-105
                          transition-transform duration-300 ease-out"
             >
-              𝐸𝓍𝓅𝓁𝑜𝓇𝑒 𝐹𝓊𝓁𝓁 𝒢𝒶𝓁𝓁𝑒𝓇𝓎
+              𝐄𝐱𝐩𝐥𝐨𝐫𝐞 𝐅𝐮𝐥𝐥 𝐆𝐚𝐥𝐥𝐞𝐫𝐲
             </Link>
       </div>
     </section>

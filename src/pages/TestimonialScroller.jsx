@@ -1,5 +1,5 @@
 import React from "react";
-import bgImage from "../assets/image/caaa.jpg"; // Transparent image for inside box
+import bgImage from "../assets/image/caaa.webp"; // Transparent image for inside box
 import AnimatedSection from "../components/AnimatedSection";
 
 const testimonials = [
@@ -52,8 +52,8 @@ const TestimonialsScroller = () => {
           What Our Coffee Lovers Say ☕
         </h2>
         <p className="text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          𝑅𝑒𝒶𝓁 𝓈𝓉𝑜𝓇𝒾𝑒𝓈, 𝓇𝑒𝒶𝓁 𝓅𝒶𝓈𝓈𝒾𝑜𝓃. 𝐸𝒶𝒸𝒽 𝓉𝑒𝓈𝓉𝒾𝓂𝑜𝓃𝒾𝒶𝓁 𝓇𝑒𝒻𝓁𝑒𝒸𝓉𝓈 𝓉𝒽𝑒 𝓁𝑜𝓋𝑒, 𝓌𝒶𝓇𝓂𝓉𝒽,
-         𝒶𝓃𝒹 𝒿𝑜𝓎 𝓉𝒽𝒶𝓉 𝑜𝓊𝓇 𝒸𝑜𝒻𝒻𝑒𝑒 𝒷𝓇𝒾𝓃𝑔𝓈 𝓉𝑜 𝒹𝒶𝒾𝓁𝓎 𝓁𝒾𝒻𝑒. 𝒟𝒾𝓈𝒸𝑜𝓋𝑒𝓇 𝓌𝒽𝒶𝓉 𝓂𝒶𝓀𝑒𝓈 𝑜𝓊𝓇 𝒷𝓇𝑒𝓌𝓈 𝓊𝓃𝒻𝑜𝓇𝑔𝑒𝓉𝓉𝒶𝒷𝓁𝑒.
+          𝐑𝐞𝐚𝐥 𝐬𝐭𝐨𝐫𝐢𝐞𝐬 𝐫𝐞𝐚𝐥 𝐩𝐚𝐬𝐬𝐢𝐨𝐧 𝐄𝐚𝐜𝐡 𝐭𝐞𝐬𝐭𝐢𝐦𝐨𝐧𝐢𝐚𝐥 𝐫𝐞𝐟𝐥𝐞𝐜𝐭 𝐭𝐡𝐞 𝐥𝐨𝐯𝐞 𝐰𝐚𝐫𝐦𝐭𝐡 𝐚𝐧𝐝 𝐣𝐨𝐲 𝐭𝐡𝐚𝐭 𝐨𝐮𝐫 𝐜𝐨𝐟𝐞𝐞 𝐛𝐫𝐢𝐧𝐠𝐬 𝐭𝐨 𝐝𝐚𝐢𝐥𝐲 𝐥𝐢𝐟𝐞.
+          𝐃𝐢𝐬𝐜𝐨𝐯𝐞𝐫 𝐰𝐡𝐚𝐭 𝐦𝐚𝐤𝐞𝐬 𝐨𝐮𝐫 𝐛𝐫𝐞𝐰𝐬 𝐮𝐧𝐟𝐨𝐫𝐞𝐠𝐞𝐭𝐚𝐛𝐥𝐞
         </p>
       </div>
 

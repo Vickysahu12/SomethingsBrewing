@@ -1,5 +1,5 @@
 import React from "react";
-import CoffeeSplash from "../assets/image/cis.png";
+import CoffeeSplash from "../assets/image/cis.webp"
 import { Star } from "lucide-react";
 import AnimatedSection from "../components/AnimatedSection";
 

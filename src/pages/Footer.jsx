@@ -1,6 +1,6 @@
 import React from 'react'; 
 import { Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
-import bgImage from "../assets/image/powder.jpg"; // apna transparent bg image add kar
+import bgImage from "../assets/image/powder.webp"; // apna transparent bg image add kar
 import AnimatedSection from '../components/AnimatedSection';
 
 const Footer = () => {
@@ -49,11 +49,11 @@ const Footer = () => {
                   <div className="absolute top-1 left-1 w-2 h-2 bg-white rounded-full opacity-60"></div>
                 </div>
               </div>
-              <h3 className="text-2xl font-bold">𝐭𝐫𝐚𝐧𝐪𝐮𝐢𝐥𝟏𝟗𝟗𝟐</h3>
+              <h3 className="text-2xl font-bold">𝐃𝐚𝐫𝐤𝐇𝐚𝐰𝐤𝐂𝐨𝐟𝐞𝐞</h3>
             </div>
             
             <p className="text-amber-100 text-sm leading-relaxed mb-6">
-              𝐭𝐫𝐚𝐧𝐪𝐮𝐢𝐥𝟏𝟗𝟗𝟐 𝚘𝚏𝚏𝚎𝚛 𝚙𝚛𝚎𝚖𝚒𝚎𝚛 𝚎𝚡𝚙𝚎𝚛𝚝𝚎𝚍 𝚌𝚛𝚊𝚏𝚝𝚎𝚍 𝚌𝚘𝚏𝚎𝚎 𝚝𝚑𝚊𝚝 𝚍𝚎𝚕𝚒𝚎𝚟𝚎𝚛 𝚛𝚒𝚌𝚑 𝚏𝚕𝚊𝚟𝚘𝚞𝚛𝚜 𝚊𝚗𝚍 𝚊𝚗 𝚞𝚗𝚏𝚘𝚛𝚐𝚎𝚝𝚝𝚊𝚋𝚕𝚎 𝚎𝚡𝚙𝚎𝚛𝚒𝚎𝚗𝚌𝚎 𝚒𝚗 𝚎𝚟𝚎𝚛𝚢 𝚌𝚞𝚙
+              𝐃𝐚𝐫𝐤𝐇𝐚𝐰𝐤𝐂𝐨𝐟𝐞𝐞 𝐎𝐟𝐟𝐞𝐫 𝐩𝐫𝐞𝐦𝐢𝐞𝐫 𝐞𝐱𝐩𝐞𝐫𝐭𝐞𝐝 𝐜𝐫𝐚𝐟𝐭𝐞𝐝 𝐜𝐨𝐟𝐞𝐞 𝐭𝐡𝐚𝐭 𝐝𝐞𝐥𝐢𝐞𝐯𝐞𝐫 𝐫𝐢𝐜𝐡 𝐟𝐥𝐚𝐯𝐨𝐮𝐫 𝐚𝐧𝐝 𝐚𝐧 𝐮𝐧𝐟𝐨𝐫𝐠𝐞𝐭𝐭𝐚𝐛𝐥𝐞 𝐞𝐱𝐩𝐞𝐫𝐢𝐞𝐧𝐜𝐞 𝐢𝐧 𝐞𝐯𝐞𝐫𝐲 𝐜𝐮𝐩
             </p>
             
             <div>
@@ -151,7 +151,7 @@ const Footer = () => {
         <div className="max-w-6xl mx-auto px-4 py-4">
           <div className="text-center">
             <p className="text-amber-200 text-sm">
-              © 2025 𝐭𝐫𝐚𝐧𝐪𝐮𝐢𝐥𝟏𝟗𝟗𝟐. All Rights Reserved.
+              © 2025 𝐃𝐚𝐫𝐤𝐇𝐚𝐰𝐤𝐂𝐨𝐟𝐞𝐞. All Rights Reserved.
             </p>
           </div>
         </div>

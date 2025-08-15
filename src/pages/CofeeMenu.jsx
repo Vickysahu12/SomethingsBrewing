@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Star, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
-import latte from "../assets/image/ca6.jpg";
-import caramel from "../assets/image/ca5.jpg";
-import vanilla from "../assets/image/ca4.jpg";
-import coffeeCup from "../assets/image/ca3.jpg";
-import flatWhite from "../assets/image/ca2.jpg";
-import cinnamon from "../assets/image/ca1.jpg";
+import latte from "../assets/image/ca6.webp";
+import caramel from "../assets/image/ca5.webp";
+import vanilla from "../assets/image/ca4.webp";
+import coffeeCup from "../assets/image/ca3.webp";
+import flatWhite from "../assets/image/ca2.webp";
+import cinnamon from "../assets/image/ca1.webp";
 import AnimatedSection from "../components/AnimatedSection";
 
 const coffeeItems = [
@@ -19,6 +19,12 @@ const coffeeItems = [
 ];
 
 const CoffeeGrid = () => {
+  const [loadedImages, setLoadedImages] = useState({});
+
+  const handleImageLoad = (id) => {
+    setLoadedImages((prev) => ({ ...prev, [id]: true }));
+  };
+
   return (
     <AnimatedSection>
       <section className="bg-[#241414] text-white py-16 px-6" id="signature-coffees">
@@ -37,25 +43,31 @@ const CoffeeGrid = () => {
               <article
                 key={coffee.id}
                 className="group relative rounded-xl overflow-hidden shadow-lg bg-black/20
-                           transform-gpu transition-all duration-300 hover:scale-[1.02] hover:shadow-xl"
+                         transform-gpu transition-all duration-300 hover:scale-[1.02] hover:shadow-xl"
               >
                 <div className="relative w-full aspect-[4/3] overflow-hidden">
+                  {/* Skeleton Loader Effect */}
+                  {!loadedImages[coffee.id] && (
+                    <div className="absolute inset-0 bg-gray-700 animate-pulse"></div>
+                  )}
+
                   <img
                     src={coffee.image}
                     alt={coffee.name}
                     loading="lazy"
-                    decoding="async"
-                    className="w-full h-full object-cover object-center 
+                    onLoad={() => handleImageLoad(coffee.id)}
+                    className={`w-full h-full object-cover object-center 
                                will-change-transform transform-gpu
-                               group-hover:scale-105 transition-transform duration-500 ease-out"
+                               group-hover:scale-105 transition-transform duration-500 ease-out
+                               ${loadedImages[coffee.id] ? "opacity-100" : "opacity-0"}`}
                   />
                 </div>
 
                 {/* Overlay Content */}
                 <div className="absolute bottom-0 left-0 w-full p-5 
-                                bg-gradient-to-t from-black/80 via-black/50 to-transparent
-                                group-hover:from-black/90 group-hover:via-black/70
-                                transition-colors duration-300 ease-in-out">
+                                 bg-gradient-to-t from-black/80 via-black/50 to-transparent
+                                 group-hover:from-black/90 group-hover:via-black/70
+                                 transition-colors duration-300 ease-in-out">
                   <h3 className="text-lg font-semibold">{coffee.name}</h3>
                   <div className="flex justify-between items-center mt-2">
                     <div className="flex items-center space-x-1 text-[#e2b84c]">
@@ -89,7 +101,7 @@ const CoffeeGrid = () => {
                          hover:bg-[#e2b84c]/20 hover:scale-105
                          transition-transform duration-300 ease-out"
             >
-              𝒱𝒾𝑒𝓌 𝒜𝓁𝓁
+              𝐕𝐢𝐞𝐰 𝐀𝐥𝐥
             </Link>
           </div>
         </div>

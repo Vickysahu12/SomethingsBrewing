@@ -1,48 +1,84 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { NavLink } from "react-router-dom";
-import Cup from "../assets/image/cuuun.png";
+import Logo from "../assets/image/logoo2.webp"; // Apne logo ka path update karein
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // Scroll event listener
+  useEffect(() => {
+    const handleScroll = () => {
+      // Check if the page is scrolled more than 50px
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    // Add event listener when the component mounts
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []); // Empty dependency array means this effect runs only once
 
   const links = [
-    { name: "𝐻𝑜𝓂𝑒", path: "/" },
-    { name: "𝒜𝒷𝑜𝓊𝓉", path: "/about" },
-    { name: "𝑀𝑒𝓃𝓊", path: "/menu" },
-    { name: "𝒢𝒶𝓁𝓁𝑒𝓇𝓎", path: "/Gallery" },
-    { name: "𝒞𝑜𝓃𝓉𝒶𝒸𝓉", path: "/contact" },
+    { name: "𝐇𝐨𝐦𝐞", path: "/" },
+    { name: "𝐀𝐛𝐨𝐮𝐭", path: "/about" },
+    { name: "𝐌𝐞𝐧𝐮", path: "/menu" },
+    { name: "𝐆𝐚𝐥𝐥𝐞𝐫𝐲", path: "/Gallery" },
+    { name: "𝐂𝐨𝐧𝐭𝐚𝐜𝐭", path: "/contact" },
+
   ];
 
+  // Dynamic classes based on scroll state
+  const headerClasses = `fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
+    isScrolled
+      ? "bg-white/80 backdrop-blur-md text-[#596528]"
+      : "bg-[#241414] text-white"
+  }`;
+
+  const navLinkClasses = (isActive) =>
+    `transition-colors duration-300 font-medium ${
+      isScrolled
+        ? isActive ? "text-[#97a066]" : "hover:text-[#97a066]"
+        : isActive ? "text-[#e2b84c]" : "hover:text-[#e2b84c]"
+    }`;
+
+  const buttonClasses = `px-4 py-2 rounded-md transition-all duration-300 ${
+    isScrolled
+      ? "border border-[#596528] text-[#596528] hover:bg-[#97a066] hover:text-white"
+      : "border border-white text-white hover:bg-[#e2b84c] hover:text-black"
+  }`;
+  
+  const iconClasses = isScrolled ? "text-[#596528]" : "text-white";
+
   return (
-    <header className="bg-[#241414] text-white fixed top-0 left-0 w-full z-50">
+    <header className={headerClasses}>
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo */}
         <NavLink to="/" className="flex items-center space-x-2">
-          <img
-            src={Cup}
-            alt="Somethings Brewing Logo"
-            loading="lazy"
-            className="h-9 w-9"
-          />
-          <span className="text-lg font-bold text-[#d4b06c]">
-            𝐭𝐫𝐚𝐧𝐪𝐮𝐢𝐥𝟏𝟗𝟗𝟐
-          </span>
+          <div className="p-1 rounded">
+            <img
+              src={Logo}
+              alt="Cafe Logo"
+              loading="lazy"
+              className="h-17 w-auto mx-auto object-contain"
+            />
+          </div>
         </NavLink>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex flex-grow justify-center">
-          <ul className="flex space-x-8 text-sm font-medium">
+          <ul className="flex space-x-8 text-sm">
             {links.map((link) => (
               <li key={link.name}>
-                <NavLink
-                  to={link.path}
-                  className={({ isActive }) =>
-                    `transition-colors duration-300 ${
-                      isActive ? "text-[#e2b84c]" : "hover:text-[#e2b84c]"
-                    }`
-                  }
-                >
+                <NavLink to={link.path} className={({ isActive }) => navLinkClasses(isActive)}>
                   {link.name}
                 </NavLink>
               </li>
@@ -52,12 +88,8 @@ const Navbar = () => {
 
         {/* Book a Table (Desktop) */}
         <div className="hidden md:block">
-          <NavLink
-            to="/book-table"
-            className="border border-white text-white px-4 py-2 rounded-md 
-                       hover:bg-[#e2b84c] hover:text-black transition-all duration-300"
-          >
-            𝐵𝑜𝑜𝓀 𝒶 𝓉𝒶𝒷𝓁𝑒
+          <NavLink to="/BookaTable" className={buttonClasses}>
+             𝐁𝐨𝐨𝐤 𝐚 𝐓𝐚𝐛𝐥𝐞
           </NavLink>
         </div>
 
@@ -67,14 +99,14 @@ const Navbar = () => {
           aria-label="Toggle Menu"
           onClick={() => setIsOpen(!isOpen)}
         >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
+          {isOpen ? <X size={28} className={iconClasses} /> : <Menu size={28} className={iconClasses} />}
         </button>
       </div>
 
-      {/* Sidebar */}
+      {/* Sidebar (Solid dark, no transparency) */}
       <div
-        className={`fixed top-0 right-0 w-64 h-full bg-[#241414] text-white z-50 p-6 
-                    transform transition-transform duration-300 ease-in-out
+        className={`fixed top-0 right-0 w-64 h-screen bg-[#241414] text-white z-[51] shadow-xl
+                    transform transition-transform duration-300 ease-in-out p-6
                     ${isOpen ? "translate-x-0" : "translate-x-full"}`}
       >
         <button
@@ -104,12 +136,12 @@ const Navbar = () => {
           {/* Book a Table (Mobile) */}
           <li>
             <NavLink
-              to="/book-table"
+              to="/BookaTable"
               onClick={() => setIsOpen(false)}
               className="block border border-white text-center text-white px-4 py-2 rounded-md 
                          hover:bg-[#e2b84c] hover:text-black transition-all duration-300"
             >
-              𝐵𝑜𝑜𝓀 𝒶 𝓉𝒶𝒷𝓁𝑒
+               𝐁𝐨𝐨𝐤 𝐚 𝐓𝐚𝐛𝐥𝐞
             </NavLink>
           </li>
         </ul>

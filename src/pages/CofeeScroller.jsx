@@ -1,5 +1,5 @@
 import React from "react";
-import coffeeBean from "../assets/image/beans.png"; // tu apna path update karna
+import coffeeBean from "../assets/image/beans.webp"; // tu apna path update karna
 import AnimatedSection from "../components/AnimatedSection";
 
 const CoffeeScroller = () => {

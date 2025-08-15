@@ -19,6 +19,7 @@ import Gallery from "./router/Gallery";
 import Contact from "./router/Contact";
 import Booking from "./router/Booking";
 import Footer from "./pages/Footer";
+import BookaTable from "./router/BookaTable";
 
 const App = () => {
   return (
@@ -49,6 +50,7 @@ const App = () => {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/booking" element={<Booking />} />
+        <Route path="/BookaTable" element={<BookaTable/>} />
       </Routes>
     </Router>
   );

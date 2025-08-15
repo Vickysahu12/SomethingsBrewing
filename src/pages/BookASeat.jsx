@@ -1,5 +1,5 @@
 import React from "react";
-import bgImage from "../assets/image/shop.jpg"; // apna cozy background image add kar
+import bgImage from "../assets/image/shop.webp"; // apna cozy background image add kar
 import AnimatedSection from "../components/AnimatedSection";
 
 const BookASeat = () => {

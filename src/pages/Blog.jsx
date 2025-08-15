@@ -1,7 +1,7 @@
 import React from 'react';
-import caaa from "../assets/image/caaa.jpg"
-import reaaa from "../assets/image/reaaa.jpg"
-import ca2 from "../assets/image/ca2.jpg"
+import caaa from "../assets/image/caaa.webp"
+import reaaa from "../assets/image/reaaa.webp"
+import ca2 from "../assets/image/ca2.webp"
 import AnimatedSection from '../components/AnimatedSection';
 
 const Blog = () => {
@@ -36,7 +36,7 @@ const Blog = () => {
             Why Choose Us?
           </h2>
           <p className="text-amber-200 text-lg max-w-2xl mx-auto">
-            𝐹𝓇𝑜𝓂 𝒷𝑒𝒶𝓃 𝓉𝑜 𝒸𝓊𝓅, 𝓌𝑒 𝑒𝓃𝓈𝓊𝓇𝑒 𝑒𝓋𝑒𝓇𝓎 𝓈𝒾𝓅 𝒾𝓈 𝒶 𝓅𝓇𝑒𝓂𝒾𝓊𝓂 𝑒𝓍𝓅𝑒𝓇𝒾𝑒𝓃𝒸𝑒.
+            𝐅𝐫𝐨𝐦 𝐛𝐞𝐚𝐧 𝐭𝐨 𝐜𝐮𝐩 𝐰𝐞 𝐞𝐧𝐬𝐮𝐫𝐞 𝐞𝐯𝐞𝐫𝐲 𝐬𝐢𝐩 𝐢𝐬 𝐚 𝐩𝐫𝐞𝐦𝐢𝐮𝐦 𝐞𝐱𝐩𝐞𝐫𝐢𝐞𝐧𝐜𝐞
           </p>
         </div>
 
